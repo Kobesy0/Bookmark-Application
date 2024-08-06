@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Bookmark Application || Mostafa Kobesy</title>
+</head>
+<body>
+    <header>
+        <h1>Bookmark Manger Application</h1>
+        <div class="light">
+            <div class="moon"><i class="fa-solid fa-moon"></i></div>
+            <div class="sun"><i class="fa-solid fa-sun"></i></div>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+            <h2>Add New BookMarks</h2>
+            <div>
+                <label class="label-title"><i class="fa-solid fa-x"></i></label>
+                <input type="text" class="title" placeholder="Website Text" >
+                <span class="titleError"></span>
+            </div>
+
+            <div>
+                <label class="label-url"><i class="fa-solid fa-x"></i></label>
+                <input type="url" id="label-url" class="url" placeholder="Website URL">
+                <span class="urlError"></span>
+            </div>
+
+            <div class="category-suggestions">
+                <h4>Choose From Categories List Or Add A new One</h4>
+                <div></div>
+            </div>
+            <div>
+                <label class="label-category"><i class="fa-solid fa-x"></i></label>
+                <input type="text" class="category" placeholder="Enter new category name">
+                <span class="categoryError"></span>
+            </div>
+
+            <button type="button" class="add-category" >Add bookmark</button>
+        </form>
+        <div class="category-buttons">
+            <button class="all-books" title="All Bookmarks"><i class="fa-solid fa-house"></i></button>
+            <h4>Filter Bookmarks By Added Categories</h4>
+            <div></div>
+        </div>
+        <div class="bookmarks"></div>
+    </div>
+    <footer>
+        <div class="social-media">
+            <div class="instagram"><i  class="fa-brands fa-instagram"></i></div>
+            <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="github"><i class="fa-brands fa-github"></i></div>
+        </div>
+        <p>Copyright &copy; 2024 Designed By <span class="designer">Mostafa Kobesy</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
